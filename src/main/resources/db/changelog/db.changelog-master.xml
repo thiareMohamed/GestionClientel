@@ -5,13 +5,6 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
 
 
-<!-- Delete column-->
-<!--    <changeSet author="thiare" id="2">-->
-<!--        <dropColumn columnName="id"-->
-<!--                    tableName="client">-->
-<!--            <column name="produit_id"/>-->
-<!--        </dropColumn>-->
-<!--    </changeSet>-->
-    <include file="2022/07/14/add_colunm_product_id_into_client.xml" relativeToChangelogFile="true"/>
-    <include file="2022/07/14/add_forign_key_into_client.xml" relativeToChangelogFile="true"/>
+    <include file="202207141054.add_colunm_product_id_into_client.xml" relativeToChangelogFile="true"/>
+    <include file="202207141055.add_forign_key_into_client.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
