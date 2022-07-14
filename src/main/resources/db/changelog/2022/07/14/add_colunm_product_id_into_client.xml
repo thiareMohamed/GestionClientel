@@ -4,9 +4,10 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
 
-    <changeSet author="thiare" id="addForeignKey">
-    <addForeignKeyConstraint constraintName="fk_client_produit"
-                             baseTableName="client" baseColumnNames="produit_id" referencedTableName="produit" referencedColumnNames="id"/>
-</changeSet>
-
+<changeSet author="thiare" id="1">
+    <comment>Add column produit_id to client</comment>
+        <addColumn tableName="client">
+            <column name="produit_id" type="int"/>
+        </addColumn>
+    </changeSet>
 </databaseChangeLog>
