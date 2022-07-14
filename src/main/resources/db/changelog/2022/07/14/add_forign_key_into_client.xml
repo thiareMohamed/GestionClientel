@@ -1,0 +1,7 @@
+<changeSet author="thiare" id="1">
+    <addForeignKeyConstraint baseColumnNames="produit_id"
+                             baseTableName="client"
+                             constraintName="fk_client_produit_id"
+                             referencedColumnNames="id"
+                             referencedTableName="produit"/>
+</changeSet>
