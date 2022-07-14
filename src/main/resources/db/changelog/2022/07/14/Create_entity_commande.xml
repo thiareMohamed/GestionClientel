@@ -1,0 +1,5 @@
+<changeSet author="your.name" id="4">
+    <addTable tableName="commande">
+        <column name="country" type="varchar(2)"/>
+    </addTable>
+</changeSet>
